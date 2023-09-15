@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>juego</title>
+</head>
+
+<body>
+
+    <div class="conteiner">
+        <p id="hora"> Timer </p>
+        <p class="fecha" id="fecha"></p>
+        <button onclick="obtenerFecha()" class="boton">Obtener Fecha</button>
+    </div>
+    
+    <h1>Adivina el numero</h1>
+    <p>Introduce un numero entre 1 y 100</p>
+    <input type="number" id="numeroEntrada">
+    <button onclick="chequearResultado()">Comprobar</button>
+    <p id="mensaje"> ¡A Jugar !</p>
+    <h4>Cantidad de intentos: 5 <p id="intento">0</p>
+    </h4>
+    <button onclick="resetearJuego()">Reiniciar Juego</button>
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
